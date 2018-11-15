@@ -1,7 +1,11 @@
-$(document).ready(function(){	 
-  main()
+$(document).ready(function(){
+  $('.main-menu-mobile').on('click', function() {
+    $(this).toggleClass('active')
+    $('.head-top-menu-nav').toggleClass('active');
 });
 
+});
+/*
 var main = function() {
   $('.main-menu-mobile, #mask2').on('click', function() {
   	if ($('.main-menu-mobile').hasClass('active')) {
@@ -21,5 +25,5 @@ var main = function() {
 	}
   });
 };
-
+*/
 

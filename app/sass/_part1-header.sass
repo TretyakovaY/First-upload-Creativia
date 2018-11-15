@@ -10,6 +10,7 @@ input textarea
 	top: -3px
 	background-size: contain
 	max-width: 100%
+	padding-left: 20px
 
 .head-top-menu-nav
 	display: inline
@@ -155,6 +156,10 @@ input textarea
 	background: rgba(0, 0, 0, 0.5)
 	z-index: 999
 	display: none
+.head-top-menu-nav.active
+	opacity: 0.85
+	display: block
+	right: 0px
 
 @media screen and (max-width:1140px)
 	.head-info-text
@@ -163,7 +168,6 @@ input textarea
 		display: inline-block
 		float: right
 		margin-top: 15px
-
 	.head-top-menu-nav 
 		position: fixed
 		right: 0

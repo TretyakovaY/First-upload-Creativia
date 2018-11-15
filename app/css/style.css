@@ -15,7 +15,8 @@ input textarea {
   top: -3px;
   -webkit-background-size: contain;
           background-size: contain;
-  max-width: 100%; }
+  max-width: 100%;
+  padding-left: 20px; }
 
 .head-top-menu-nav {
   display: inline;
@@ -171,6 +172,11 @@ input textarea {
   background: rgba(0, 0, 0, 0.5);
   z-index: 999;
   display: none; }
+
+.head-top-menu-nav.active {
+  opacity: 0.85;
+  display: block;
+  right: 0px; }
 
 @media screen and (max-width: 1140px) {
   .head-info-text {
@@ -612,7 +618,8 @@ p {
           box-sizing: border-box;
   position: absolute;
   top: 0;
-  border-top: 3px solid #7f7f7f; }
+  border-top: 3px solid #7f7f7f;
+    border-top-position: fixed; }
 
 .slick-next {
   background: url(../img/arrow-right.png);
@@ -673,7 +680,8 @@ p {
   .head-main-top {
     height: 57px;
     width: 100%;
-    border-top: 3px solid #7f7f7f; } }
+    border-top: 3px solid #7f7f7f;
+    position: fixed; } }
 
 @media screen and (max-width: 768px) {
   .head-main-top {
@@ -698,7 +706,8 @@ p {
 
 @media screen and (max-width: 480px) {
   .head-main-top {
-    height: 40px; }
+    height: 40px;
+    position: fixed; }
   .slick-next {
     -webkit-background-size: 50% 50%;
             background-size: 50%; }
@@ -717,4 +726,5 @@ p {
 
 @media screen and (max-width: 320px) {
   .head-main-top {
-    height: 35px; } }
+    height: 35px;
+    position: fixed; } }
