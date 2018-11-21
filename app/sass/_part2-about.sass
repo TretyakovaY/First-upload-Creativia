@@ -33,7 +33,7 @@
 p
 	font-size: 20px
 	border: 1px solid #e7e7e7
-	padding-left: 95px
+	padding-left: 30px
 	padding-top: 10px
 	box-sizing: border-box
 	color: #262626
@@ -47,14 +47,18 @@ p
 	height: 45px
 	background-position: 22px center
 	box-sizing: border-box*/
-.accordion-part
+/*.accordion-part
 	overflow: hidden
 	box-sizing: border-box
-	width: 100%
-
+	width: 100%*/
+.clear
+	&:after
+		content: ''
+		display: table
+		clear: both
 .p-icon
 	float: left
-	width: 10%
+	width: 60px
 	background-color: #f7f7f7
 	height: 45px
 	border: 1px solid #e7e7e7
@@ -75,7 +79,7 @@ p
 	text-align: center
 .p-minus
 	float: right
-	width: 90%
+	width: calc(100% - 60px)
 	font-weight: bold
 	background-color: #f7f7f7
 	height: 45px
@@ -137,9 +141,8 @@ p
 .about-scroll
 	padding-top: 100px
 	text-align: center
-	width: 100%
 .about-scroll img
-	width: 100%
+	max-width: 40%
 .about-icons
 	overflow: hidden
 	box-sizing: border-box
@@ -148,6 +151,8 @@ p
 	float: left
 	width: 25%
 	box-sizing: border-box
+
+
 .about-icons1-img
 	background-image: url(../img/about-icon-1.png)
 	height: 80px
@@ -221,8 +226,6 @@ p
 		font-size: 14px
 	.about-icons1-title
 		font-size: 19px
-	.about-scroll img
-		width: 80%
 
 @media screen and (max-width:768px)
 	.about-title
@@ -247,8 +250,6 @@ p
 		font-size: 14px
 	.about-scroll
 		padding-top: 50px
-	.about-scroll img
-		width: 70%
 	.about-icons
 		padding-top: 100px
 	.about-icons1
@@ -261,7 +262,6 @@ p
 		font-size: 17px
 	p
 		font-size: 17px
-		padding-left: 60px
 	.about-info-left-text
 		font-size: 13px
 	#accordion
@@ -292,7 +292,7 @@ p
 	p
 		padding-top: 5px
 		font-size: 15px
-		padding-left: 50px
+		padding-left: 20px
 	.icon-plus
 		width: 16px
 		height: 16px
@@ -329,7 +329,7 @@ p
 	.about-title-text
 		padding-top: 25px
 		padding-right: 10px
-		padding-left: 10px
+		padding-left: 20px
 	.about-info-left-text
 		padding-right: 10px
 	p
