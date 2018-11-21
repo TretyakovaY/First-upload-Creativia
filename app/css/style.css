@@ -407,6 +407,9 @@ input textarea {
   .main-menu-mobile.active {
     top: 28px; } }
 
+.about {
+  padding-bottom: 100px; }
+
 .about-title {
   padding-top: 105px;
   text-align: center;
@@ -420,12 +423,14 @@ input textarea {
   line-height: 22px;
   padding-top: 50px;
   font-weight: bold;
-  text-align: center; }
+  text-align: center;
+  color: #505050; }
 
 .about-info {
   overflow: hidden;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  padding-top: 100px; }
 
 .about-info-left {
   float: left;
@@ -433,10 +438,11 @@ input textarea {
   padding-left: 20px; }
 
 .about-info-left-text {
-  padding-top: 100px;
   font-size: 16px;
   line-height: 22px;
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Lato', sans-serif;
+  text-align: justify;
+  color: #505050; }
 
 #accordion {
   padding-top: 45px; }
@@ -447,7 +453,9 @@ p {
   padding-left: 95px;
   padding-top: 10px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  color: #262626;
+  font-family: 'Raleway', sans-serif; }
 
 /*.p-left
 	background-image: url(../img/about-part2-sign.png)
@@ -458,6 +466,23 @@ p {
 	height: 45px
 	background-position: 22px center
 	box-sizing: border-box*/
+.accordion-part {
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%; }
+
+.p-icon {
+  float: left;
+  width: 10%;
+  background-color: #f7f7f7;
+  height: 45px;
+  border: 1px solid #e7e7e7;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center; }
+
 .p-text {
   display: none;
   padding-left: 17px;
@@ -466,23 +491,72 @@ p {
   font-size: 14px;
   line-height: 22px;
   font-family: 'Lato', sans-serif;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  width: 100%;
+  color: #505050;
+  text-align: center; }
 
 .p-minus {
-  background-image: url(../img/about-part4-sign.png);
-  background-repeat: no-repeat;
+  float: right;
+  width: 90%;
   font-weight: bold;
   background-color: #f7f7f7;
   height: 45px;
-  background-position: 22px center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-bottom: 10px; }
+  margin: 0px;
+  display: inline-block;
+  cursor: pointer; }
 
-.p-minus.active {
-  margin-bottom: 0;
+.icon-plus {
+  border: 1px solid #7f7f7f;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  margin-top: 10px;
+  display: inline-block;
+  cursor: pointer; }
+
+.icon-plus-img {
+  width: 10px;
+  background-color: #505050;
+  height: 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  left: -webkit-calc(50% - 5px);
+  left: calc(50% - 5px);
+  top: -webkit-calc(50% - 1px);
+  top: calc(50% - 1px); }
+
+.icon-plus-img:after {
+  background-color: #505050;
+  width: 10px;
+  height: 2px;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  content: '';
+  position: absolute;
+  left: -webkit-calc(50% - 5px);
+  left: calc(50% - 5px);
+    left-top: -webkit-calc(50% - 1px);
+    left-top: calc(50% - 1px); }
+
+.p-icon.active .icon-plus {
   color: #ff0036;
-  background-image: url(../img/about-part2-sign.png); }
+  border: 1px solid #ff0036; }
+
+.p-icon.active .icon-plus-img {
+  background-color: #ff0036; }
+
+.p-icon.active .icon-plus-img:after {
+  background-color: #ff0036;
+  display: none; }
+
+.accordion-part.active .p-minus {
+  color: #ff0036; }
 
 .about-right {
   float: right;
@@ -491,15 +565,18 @@ p {
 
 .about-right-img {
   background-repeat: no-repeat;
-  max-width: 100%;
-  padding-top: 100px; }
+  max-width: 100%; }
 
 .about-right-img img {
   max-width: 100%; }
 
 .about-scroll {
   padding-top: 100px;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
+
+.about-scroll img {
+  width: 100%; }
 
 .about-icons {
   overflow: hidden;
@@ -567,6 +644,179 @@ p {
   .about-icons4-img:hover {
     background-image: url(../img/about-icon-4hover.png); }
 
+@media screen and (max-width: 1140px) {
+  .about-icons1-text {
+    font-size: 15px;
+    padding-top: 28px; }
+  .about-icons {
+    padding-left: 30px;
+    padding-right: 30px; } }
+
+@media screen and (max-width: 992px) {
+  .about-title {
+    padding-top: 80px;
+    font-size: 26px; }
+  .about-title-text {
+    padding-top: 45px;
+    font-size: 15px;
+    line-height: 18px; }
+  .about-info-left-text {
+    font-size: 15px; }
+  p {
+    font-size: 19px; }
+  .about-icons1-text {
+    font-size: 14px; }
+  .about-icons1-title {
+    font-size: 19px; }
+  .about-scroll img {
+    width: 80%; } }
+
+@media screen and (max-width: 768px) {
+  .about-title {
+    padding-top: 70px;
+    font-size: 26px; }
+  .about-title-text {
+    padding-top: 45px;
+    font-size: 12px;
+    line-height: 18px; }
+  .about-info {
+    padding-top: 70px;
+    padding-right: 20px; }
+  .about-info-left {
+    float: left;
+    width: 100%;
+    padding-left: 20px; }
+  .about-right {
+    width: 100%;
+    text-align: center;
+    padding: 30px 20px; }
+  .about-info-left-text {
+    font-size: 14px; }
+  .about-scroll {
+    padding-top: 50px; }
+  .about-scroll img {
+    width: 70%; }
+  .about-icons {
+    padding-top: 100px; }
+  .about-icons1 {
+    width: 50%;
+    padding-bottom: 20px; }
+  .about-icons1-text {
+    font-size: 11px;
+    padding-right: 5px; }
+  .about-icons1-title {
+    font-size: 17px; }
+  p {
+    font-size: 17px;
+    padding-left: 60px; }
+  .about-info-left-text {
+    font-size: 13px; }
+  #accordion {
+    padding-top: 25px; }
+  p {
+    padding-top: 6px; }
+  .p-icon {
+    height: 35px; }
+  .p-minus {
+    height: 35px; }
+  .icon-plus {
+    margin-top: 6px; } }
+
+@media screen and (max-width: 480px) {
+  .about-title {
+    font-size: 20px;
+    padding-top: 50px; }
+  .about-title-text {
+    padding-top: 35px; }
+  .about-info {
+    padding-top: 50px; }
+  .about-info-left {
+    width: 100%; }
+  .p-minus {
+    height: 30px; }
+  .p-icon {
+    height: 30px; }
+  p {
+    padding-top: 5px;
+    font-size: 15px;
+    padding-left: 50px; }
+  .icon-plus {
+    width: 16px;
+    height: 16px;
+    margin-top: 6px; }
+  .icon-plus-img {
+    width: 8px;
+    left: -webkit-calc(50% - 4px);
+    left: calc(50% - 4px);
+    top: -webkit-calc(50% - 0.5px);
+    top: calc(50% - 0.5px); }
+  .icon-plus-img:after {
+    width: 8px;
+    left: -webkit-calc(50% - 4px);
+    left: calc(50% - 4px);
+      left-top: -webkit-calc(50% - 1px);
+      left-top: calc(50% - 1px); }
+  .accordion-part {
+    padding-right: 20px; }
+  .about-info-left-text {
+    padding-right: 20px; }
+  .about-right {
+    width: 100%;
+    padding-top: 50px; }
+  .about-icons1-img, .about-icons2-img, .about-icons3-img, .about-icons4-img {
+    -webkit-background-size: 40% 40%;
+            background-size: 40%; }
+  .about-icons1 {
+    padding-bottom: 20px; }
+  .about-icons1-text {
+    padding-top: 20px; }
+  .about-icons1-title {
+    padding-top: 24px; }
+  .p-text {
+    font-size: 12px;
+    text-align: justify; } }
+
+@media screen and (max-width: 320px) {
+  .about-title-text {
+    padding-top: 25px;
+    padding-right: 10px;
+    padding-left: 10px; }
+  .about-info-left-text {
+    padding-right: 10px; }
+  p {
+    font-size: 13px;
+    padding-top: 7px;
+    padding-left: 40px; }
+  .about-icons1 {
+    width: 100%; }
+  .about-icons1-img, .about-icons2-img, .about-icons3-img, .about-icons4-img {
+    -webkit-background-size: 35% 35%;
+            background-size: 35%; }
+  .about-icons1-title {
+    padding-top: 20px; }
+  .about-icons1-title {
+    font-size: 15px; }
+  .about-icons {
+    padding-top: 70px; }
+  .about-icons1-text {
+    text-align: center; }
+  .icon-plus {
+    width: 14px;
+    height: 14px;
+    margin-top: 6px; }
+  .icon-plus-img {
+    width: 6px;
+    left: -webkit-calc(50% - 3px);
+    left: calc(50% - 3px);
+    top: -webkit-calc(50% - 0.5px);
+    top: calc(50% - 0.5px); }
+  .icon-plus-img:after {
+    width: 6px;
+    left: -webkit-calc(50% - 3px);
+    left: calc(50% - 3px);
+      left-top: -webkit-calc(50% - 1px);
+      left-top: calc(50% - 1px); } }
+
 * {
   margin: 0;
   padding: 0;
@@ -616,7 +866,7 @@ p {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  position: absolute;
+  position: fixed;
   top: 0;
   border-top: 3px solid #7f7f7f;
     border-top-position: fixed; }
