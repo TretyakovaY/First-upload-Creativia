@@ -457,19 +457,6 @@ p {
   color: #262626;
   font-family: 'Raleway', sans-serif; }
 
-/*.p-left
-	background-image: url(../img/about-part2-sign.png)
-	background-repeat: no-repeat
-	font-weight: bold
-	color: #ff0036
-	background-color: #f7f7f7
-	height: 45px
-	background-position: 22px center
-	box-sizing: border-box*/
-/*.accordion-part
-	overflow: hidden
-	box-sizing: border-box
-	width: 100%*/
 .clear:after {
   content: '';
   display: table;
@@ -497,7 +484,8 @@ p {
   margin-bottom: 10px;
   width: 100%;
   color: #505050;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 10px; }
 
 .p-minus {
   float: right;
@@ -559,17 +547,13 @@ p {
   background-color: #ff0036;
   display: none; }
 
-.accordion-part.active .p-minus {
+.clear.active .p-minus {
   color: #ff0036; }
 
 .about-right {
   float: right;
   width: 50%;
   padding: 0 20px; }
-
-.about-right-img {
-  background-repeat: no-repeat;
-  max-width: 100%; }
 
 .about-right-img img {
   max-width: 100%; }

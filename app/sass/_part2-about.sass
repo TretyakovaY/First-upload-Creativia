@@ -38,19 +38,6 @@ p
 	box-sizing: border-box
 	color: #262626
 	font-family: 'Raleway', sans-serif
-/*.p-left
-	background-image: url(../img/about-part2-sign.png)
-	background-repeat: no-repeat
-	font-weight: bold
-	color: #ff0036
-	background-color: #f7f7f7
-	height: 45px
-	background-position: 22px center
-	box-sizing: border-box*/
-/*.accordion-part
-	overflow: hidden
-	box-sizing: border-box
-	width: 100%*/
 .clear
 	&:after
 		content: ''
@@ -77,6 +64,7 @@ p
 	width: 100%
 	color: #505050
 	text-align: center
+	padding-bottom: 10px
 .p-minus
 	float: right
 	width: calc(100% - 60px)
@@ -124,17 +112,13 @@ p
 	&:after
 		background-color: #ff0036
 		display: none
-.accordion-part.active .p-minus
+.clear.active .p-minus
  	color: #ff0036
 
 .about-right
 	float: right
 	width: 50%
 	padding: 0 20px
-
-.about-right-img
-	background-repeat: no-repeat
-	max-width: 100%
 .about-right-img img
 	max-width: 100%
 	
@@ -151,8 +135,6 @@ p
 	float: left
 	width: 25%
 	box-sizing: border-box
-
-
 .about-icons1-img
 	background-image: url(../img/about-icon-1.png)
 	height: 80px
