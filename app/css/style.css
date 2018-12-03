@@ -835,15 +835,20 @@ p {
   clear: both; }
 
 .portfolio-category-img1 img {
+  width: 100%; }
+
+.portfolio-category-img1 {
+  position: relative;
   float: left;
   width: 28.571%; }
 
-.portfolio-category-img1 {
-  position: relative; }
-
-.portfolio-category-img2 img {
+.portfolio-category-img2 {
+  position: relative;
   float: left;
   width: 21.429%; }
+
+.portfolio-category-img2 img {
+  width: 100%; }
 
 .portf-img-hover {
   opacity: 0;
@@ -852,13 +857,34 @@ p {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9); }
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center; }
 
 .portf-img-hover:hover {
   opacity: 1; }
 
 .portf-hover {
   position: relative; }
+
+.portf-img-hover-info img {
+  width: 23px;
+  padding-bottom: 35px; }
+
+.portf-hover-title {
+  color: white;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif; }
+
+.portf-img-hover-info {
+  top: -webkit-calc(50% - 35px);
+  top: calc(50% - 35px);
+  position: relative;
+  display: inline-block; }
+
+.portf-scroll {
+  text-align: center;
+  position: relative;
+  bottom: -13px; }
 
 * {
   margin: 0;
@@ -911,8 +937,10 @@ p {
           box-sizing: border-box;
   position: fixed;
   top: 0;
-    top-z-index: 999;
   border-top: 3px solid #7f7f7f; }
+
+.head-main-top {
+  z-index: 999; }
 
 .slick-next {
   background: url(../img/arrow-right.png);
