@@ -886,6 +886,190 @@ p {
   position: relative;
   bottom: -13px; }
 
+.product-title {
+  padding-top: 105px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 30px; }
+
+.product-text {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  padding-top: 50px;
+  font-weight: bold;
+  text-align: center;
+  color: #505050;
+  padding-bottom: 80px; }
+
+.product-content {
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.product-content-left {
+  float: left;
+  width: 33.33%;
+  padding-top: 95px; }
+
+.product-content-middle {
+  float: left;
+  width: 33.33%;
+  text-align: center; }
+
+.product-content-middle img {
+  width: 100%;
+  display: inline-block; }
+
+.prod-black-button {
+  position: absolute;
+  text-align: center; }
+
+.prod-black-button a {
+  display: inline-block;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #131313;
+  width: 170px;
+  height: 50px;
+  text-align: center;
+  border: none;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  font-style: Medium;
+  line-height: 50px;
+  border: none;
+  margin: -108px 108px; }
+  .prod-black-button a:hover {
+    background-color: #ff0036; }
+
+.product-content-right {
+  float: left;
+  width: 33.33%;
+  padding-top: 95px; }
+
+.prod-left1 {
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  height: 50px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 15px; }
+  .prod-left1:hover {
+    background-color: #ff0036;
+    color: #fff; }
+
+.prod-menu-left1 {
+  font-size: 20px;
+  color: #262626;
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  background-image: url(../img/prod-icon.png);
+  background-repeat: no-repeat;
+  background-position-y: 6px;
+  background-position-x: 330px;
+  padding-left: 29px;
+  padding-top: 10px;
+  height: 50px;
+  margin-right: 20px; }
+  .prod-menu-left1:hover {
+    background-image: url(../img/prod-icon-hover.png);
+    color: #fff; }
+
+@media screen and (max-width: 992px) {
+  .product-title {
+    padding-top: 80px;
+    font-size: 26px; }
+  .product-text {
+    padding-top: 45px;
+    font-size: 15px;
+    padding-bottom: 60px; }
+  .prod-menu-left1 {
+    font-size: 18px;
+    background-position-x: right; }
+  .prod-black-button a {
+    margin: -108px 87px;
+    font-size: 14px;
+    width: 150px;
+    height: 46px;
+    line-height: 46px; } }
+
+@media screen and (max-width: 870px) {
+  .prod-black-button a {
+    margin: -83px 65px;
+    font-size: 14px;
+    width: 130px;
+    height: 40px;
+    line-height: 40px; }
+  .prod-menu-left1 {
+    font-size: 13px; } }
+
+@media screen and (max-width: 768px) {
+  .product-title {
+    padding-top: 70px;
+    font-size: 20px; }
+  .product-text {
+    padding-top: 45px;
+    font-size: 12px;
+    padding-bottom: 60px; }
+  .prod-menu-left1 {
+    font-size: 13px; }
+  .prod-black-button a {
+    margin: -83px 65px;
+    font-size: 14px;
+    width: 130px;
+    height: 40px;
+    line-height: 40px; } }
+
+@media screen and (max-width: 750px) {
+  .product-text {
+    margin-right: 20px;
+    margin-left: 20px; }
+  .product-content-left {
+    float: left;
+    width: 100%;
+    padding-top: 0px; }
+  .prod-left1 {
+    margin-left: 20px;
+    margin-right: 20px; }
+  .product-content-middle {
+    float: left;
+    width: 100%; }
+  .product-content-right {
+    float: left;
+    width: 100%;
+    padding-top: 50px; }
+  .prod-black-button {
+    text-align: center; }
+  .prod-black-button a {
+    margin: -120px 300px;
+    display: inline-block; }
+  .product-content-middle {
+    text-align: center; }
+  .product-content-middle img {
+    width: 60%; } }
+
+@media screen and (max-width: 480px) {
+  .prod-black-button a {
+    margin: -90px 175px; }
+  .prod-menu-left1 {
+    -webkit-background-size: 8% 8%;
+            background-size: 8%;
+    height: 42px; } }
+
+@media screen and (max-width: 320px) {
+  .prod-left1 {
+    height: 37px; }
+  .prod-black-button a {
+    margin: -60px 108px;
+    width: 85px;
+    height: 28px;
+    font-size: 12px;
+    line-height: 29px; } }
+
 * {
   margin: 0;
   padding: 0;
