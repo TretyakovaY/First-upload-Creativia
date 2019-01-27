@@ -971,7 +971,8 @@ p {
   background-image: url(../img/prod-icon.png);
   background-repeat: no-repeat;
   background-position-y: 6px;
-  background-position-x: 330px;
+  background-position-x: right;
+  padding-right: 60px;
   padding-left: 29px;
   min-height: 20px;
   display: table-cell;
@@ -1207,6 +1208,140 @@ p {
   .client-text {
     padding-top: 45px;
     font-size: 15px; } }
+
+.teamwork {
+  background-color: #fff; }
+
+.team-title {
+  padding-top: 105px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 30px; }
+
+.team-text {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  padding-top: 50px;
+  font-weight: bold;
+  text-align: center;
+  color: #505050;
+  padding-bottom: 100px; }
+
+.team-workers {
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-bottom: 100px;
+  color: #262626; }
+  .team-workers:hover {
+    color: #ff0036; }
+
+.team-woker1 {
+  float: left;
+  width: -webkit-calc(25% - 30px);
+  width: calc(25% - 30px);
+  margin: 0 15px;
+  color: #262626; }
+  .team-woker1:hover {
+    border: 1px solid #262626;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+
+.team-woker1-photo img {
+  width: 100%; }
+
+.team-woker1-photo {
+  position: relative; }
+
+.team-woker1-photo-hover {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  text-align: center; }
+
+.team-woker1-photo-hover:hover {
+  opacity: 1; }
+
+.team-woker1-name {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #262626;
+  text-align: center;
+  padding-top: 35px; }
+  .team-woker1-name:hover {
+    color: #ff0036; }
+
+.team-woker1-who {
+  padding-top: 25px;
+  text-align: center;
+  font-size: 16px; }
+
+.team-hover-icons-img {
+  display: inline-block;
+  top: -webkit-calc(50% - 21px);
+  top: calc(50% - 21px);
+  position: relative; }
+
+.team-hover-icons-img img {
+  width: 45px;
+  padding-right: 10px; }
+
+.team-scrollbar {
+  padding-top: 100px;
+  text-align: center; }
+
+.team-scrollbar img {
+  width: 515px; }
+
+.skills {
+  padding-bottom: 100px; }
+
+.skills-title {
+  padding-top: 105px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 30px; }
+
+.skills-text {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  padding-top: 50px;
+  font-weight: bold;
+  text-align: center;
+  color: #505050;
+  padding-bottom: 100px; }
+
+.skills-info {
+  display: block;
+  text-align: center; }
+
+.skills-info-block {
+  margin-right: 50px;
+  display: inline-block; }
+
+.skills-info-block-title {
+  padding-top: 25px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  color: #262626; }
+
+.skills-info-block-text {
+  padding-top: 25px;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #505050;
+  font-weight: normal; }
 
 * {
   margin: 0;
