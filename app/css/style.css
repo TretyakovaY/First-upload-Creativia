@@ -1967,7 +1967,7 @@ p {
   height: 473px;
   position: absolute;
   left: 55%;
-  margin-left: -200px;
+  margin-left: -100px;
   margin-top: -477px;
   background-color: #ffffff; }
 
@@ -1992,7 +1992,9 @@ p {
   margin-left: 56px; }
 
 .line input {
-  border: none; }
+  border: none;
+  width: 350px;
+  height: 30px; }
 
 .line1 {
   width: 380px;
@@ -2009,7 +2011,9 @@ p {
   color: #505050; }
 
 .line1 input {
-  border: none; }
+  border: none;
+  width: 350px;
+  height: 88px; }
 
 .line2 {
   width: 120px;
